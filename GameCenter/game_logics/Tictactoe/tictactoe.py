@@ -121,3 +121,5 @@ def gameishere2():
 
 if __name__ == "__main__":
     gameishere2()
+else:
+    gameishere2()

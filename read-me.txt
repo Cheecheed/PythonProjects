@@ -1,0 +1,24 @@
+This is the start of my project!
+Currently, it only has tictactoe logic, no proper user display, login, database, other games, or basically anything of real value.
+Heck you can't even technically run the tictactoe game without actually running the interpreter on the direct file yet! Its crazy right.
+
+However, if you wish to explore, critique, guide, or teach, please take a look!
+Its located in game-logics\Tictactoe\tictactoe.py!
+
+If you run it you can have a great game of tictactoe locally with a friend!
+Pretty simple design, the code has loads of comments describing what's happening, and will allow you to play tictactoe worry free with your friends, provided they
+dont mind crowding around a single PC to play tictactoe!
+
+Plans for the future!:
+Include a user database that keeps track of win loss records, as well as unique login information for each user! (no emails required, not that serious bro)
+Include a multitude of simple, competitive based games, a global player balance ( as you can always count on gambling from an American), leaderboards for
+balance, wins, and yes. Losses. Love to see some good losers ya kno.
+Card games, guessing games, coin flips, tictactoe, maybe even some tile/grid based puzzle types!
+
+
+About me:
+Around 3 weeks of coding experience as of 5/14/24, so this will mark the progress I can make!
+If you are reading this, I feel sorry for how little joy you find from life,
+but find joy from the fact my work has reached you. Thank you, for having existed,
+without you, this would just be another hidden readme, in another github repository, left to crumble and wither in obscurity.
+So what I baited you into looking at it, you did, so atleast enjoy whatever games are currently available!
