@@ -1,13 +1,16 @@
 This is the start of my project!
-Currently, it only has tictactoe logic, no proper user display, login, database, other games, or basically anything of real value.
-Heck you can't even technically run the tictactoe game without actually running the interpreter on the direct file yet! Its crazy right.
+Currently, it only has tictactoe logic, and blackjack no proper user display, login, database, other games, or basically anything of real value.
+If you download the repository, the fun can begin(assuming you have python installed correctly) by running python Main_config.py
 
-However, if you wish to explore, critique, guide, or teach, please take a look!
-Its located in game-logics\Tictactoe\tictactoe.py!
+
+
+
 
 If you run it you can have a great game of tictactoe locally with a friend!
 Pretty simple design, the code has loads of comments describing what's happening, and will allow you to play tictactoe worry free with your friends, provided they
 dont mind crowding around a single PC to play tictactoe!
+If you want to play simple blackjack against a dealer, starting with $500 to see how far you can go,
+that is also a possibility! compete with your friends by downloading multiple instances on multiple pcs! (Obviously a joke dont do that, much better Blackjack around this is a personal project)
 
 Plans for the future!:
 Include a user database that keeps track of win loss records, as well as unique login information for each user! (no emails required, not that serious bro)
