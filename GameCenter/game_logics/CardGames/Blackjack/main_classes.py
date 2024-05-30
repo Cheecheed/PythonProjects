@@ -3,13 +3,13 @@
 import random
 suits = ('Hearts', 'Diamonds', 'Spades', 'Clubs')
 ranks = ('Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace')
-values = {'Two':2, 'Three':3, 'Four':4, 'Five':5, 'Six':6, 'Seven':7, 'Eight':8,
-            'Nine':9, 'Ten':10, 'Jack':10, 'Queen':10, 'King':10, 'Ace':11}
+values = {'Two': 2, 'Three': 3, 'Four':4, 'Five': 5, 'Six':6, 'Seven': 7, 'Eight': 8,
+            'Nine': 9, 'Ten': 10, 'Jack': 10, 'Queen': 10, 'King': 10, 'Ace': 11}
 
 
 class Card:
     #allows creation of individual card objects with values derived from the values dictionairy.
-    def __init__(self,suit,rank):
+    def __init__(self, suit,rank):
         self.suit = suit
         self.rank = rank
         self.value = values[rank]
@@ -24,7 +24,7 @@ class Deck:
     def __init__(self):
 
         self.all_cards = []
-        #this for loop creates the deck of 52 unique cards using the suits/ranks lists
+        # this for loop creates the deck of 52 unique cards using the suits/ranks lists
         for suit in suits:
             for rank in ranks:
                 # create card object
@@ -50,22 +50,22 @@ class Player:
         self.all_cards = []
 
     def new_hand(self):
-        #this defines an empty hand(starting a new round)
+        # this defines an empty hand(starting a new round)
         self.all_cards = []
 
     def add_cards(self, new_cards):
-        #this adds cards to players hand that have been dealt from the Deck class using deal_one()
-        #example is self.all_cards.extend(Deck.deal_one()) <-- this adds a single card from the deck, while also removing
-        #the card from the unique collection of cards inside the "deck"
+        ''' this adds cards to players hand that have been dealt from the Deck class using deal_one()
+         example is self.all_cards.extend(Deck.deal_one()) <-- this adds a single card from the deck, while also removing
+         the card from the unique collection of cards inside the "deck"'''
         if type(new_cards) is type([]):
             self.all_cards.extend(new_cards)
         else:
             self.all_cards.append(new_cards)
 
     def betting(self):
-        #this is how a player places bets. Using this logic, it updates the unique players balance until the end of game
-        #consider creating this inside Chips class, as it would be a direct interaction with those, and have Chips class
-        #tie into player balance in DB
+        # this is how a player places bets. Using this logic, it updates the unique players balance until the end of game
+        # consider creating this inside Chips class, as it would be a direct interaction with those, and have Chips class
+        # tie into player balance in DB
         allin_dec = False
         betplaced = False  # bet starts off as 0, edited later
         while betplaced == False:

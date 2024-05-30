@@ -8,7 +8,7 @@ while pickedgame is False:
         p_pick = input("Please pick a game: Blackjack or Tictactoe!").lower()
         if p_pick[0] == "b":
             setup.main_classes.blackjack()
-            pickedgame = True
+            pickedgame = True #pylint DISABLE C0103
         elif p_pick[0] == "t":
             setup.tictactoe.gameishere2()
             pickedgame = True
